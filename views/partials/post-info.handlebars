@@ -1,0 +1,21 @@
+<div class="card mb-6">
+  <header class="card-header-title has-background-grey-lighter has-text-centered">
+    
+        <div class="column">
+        
+      <a href="/post/{{id}}"  class="post-title">{{title}} </a>
+      </div>
+
+     
+  </header>
+
+    <div class="card-content">
+        <div class="content has-text-justified">
+            {{post_content}}
+        </div>
+            <div class="is-pulled-right">
+                <b>{{user.username}}</b> | 
+                   {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "Comment" comments.length}}</a>
+            </div>
+        
+    </div>
